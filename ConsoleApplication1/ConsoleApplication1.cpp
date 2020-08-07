@@ -2,10 +2,20 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+   // este programa lee angulos sexagesimales y los dice en centecimal y radial 
+	float S, C;
+	double R; //opera con 3.14159 hace R del tipo double
+
+	cout << "Ingrese el angulo en grados sexadesimales:";
+	cin >> S;
+	C = 10 / 9 * S;
+	R = 3.14159 / 180 * S;
+	cout << "Valor en grados centecimales:" << C << endl;
+	cout << "Valor en Radianes:" << R;
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
